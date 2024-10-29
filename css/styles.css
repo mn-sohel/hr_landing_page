@@ -1,4 +1,6 @@
 /* common css starts */
+/* font-family: "Space Grotesk", sans-serif; */
+/* font-family: "Inter", sans-serif; */
 *{
     margin: 0;
     padding: 0;
@@ -14,29 +16,64 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
-body{
-    font-family: "Inter", sans-serif;
-}
+
 /* common css ends */
 
 /* Navbar part css starts */
 nav{
-    background-color: #394792;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
     color: #fff;
     font-size: 18px;
+    font-family: "Inter", sans-serif;
 }
 
 nav .sidebyside{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+nav .nav_item{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 60px;
 }
 
 nav ul{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: contents;    
     font-weight: 400;
 }
 
+nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li::after{
+    width: 0;
+    height: 1px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #fff;
+    transition: all linear 0.3s;
+
+}
+
+nav ul li:hover::after{
+    width: 95%;
+}
+
+nav .nav_logo{
+    justify-self: center;
+}
+
+nav .nav_button{
+    justify-self: end;
+}
 nav img{
     height: 32px;
 }
@@ -53,6 +90,172 @@ nav a{
 nav a:hover{
     border: 1px solid #fff;
 }
-
-
 /* Navbar part css ends */
+
+/* Banner part css starts */
+#banner{
+    background-color: #394792;
+    color: #fff;
+    padding-top: 210px;
+    padding-bottom: 135px;
+}
+
+#banner .sidebyside{
+    display: grid;
+    grid-template-columns: 62% 38%;
+}
+
+#banner .banner_left h1{
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    position: relative;
+}
+
+#banner .banner_left h1 .banner_shape1{
+    width: 222px;
+    position: absolute;
+    bottom: -6px;
+    right: 18px;
+}
+#banner .banner_left h1 .banner_shape2{
+    width: 91px;
+    position: absolute;
+    top: 46px;
+    right: -71px;
+}
+
+
+.banner_left > p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    max-width: 617px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    line-height: 170%;
+}
+
+.banner_right img{
+    width: 578.56px;
+    position: relative;
+    left: -62px;
+    top: 210px;
+}
+
+.banner_button a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    font-family: "Inter", sans-serif;
+    padding: 16px 40px;
+    border-radius: 30px;
+    margin-right: 24px;
+    transition: all linear 0.3s;
+}
+.banner_button a:hover{
+    background-color: #fff;
+    color: #394792;
+}
+
+.banner_info{
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    margin-top: 60px;
+    gap: 80px;
+}
+
+.banner_left .banner_info .item{
+    position: relative;
+}
+
+.banner_left .banner_info .item::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+    width: 1px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.16);
+
+}
+
+.banner_left .banner_info .item:last-child::after{
+    display: none;
+}
+
+.banner_left .banner_info h3{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+} 
+
+.banner_left .banner_info p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    max-width: 86px;
+    line-height: 150%;
+    margin-top: 8px;
+} 
+/* Banner part css ends */
+
+/* Management part css starts */
+#management {
+    margin-top: 100px;
+}
+#management h2{
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 140%;
+    text-align: center;
+}
+
+#management h2 img{
+    width: 162px;
+    position: relative;
+    top: -31px;
+    left: -46px;
+}
+
+#management .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3, 379px);
+    gap: 32px;
+    margin-top: 64px;
+}
+
+#management .item img{
+    width: 100%;
+}
+
+#management .item h3{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 140%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#management .item p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Management part css ends */
