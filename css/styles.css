@@ -247,15 +247,73 @@ nav a:hover{
     font-family: "Inter", sans-serif;
     line-height: 140%;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* Management part css ends */
+
+/* Others part css starts */
+#others{
+    margin-top: 100px;
+}
+#others .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 117px;
+}
+
+#others .left img{
+    width: 100%;
+}
+
+#others .right h2{
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 140%;
+}
+
+#others .right p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    max-width: 522px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#others .right ul {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    display: grid;
+    gap: 34px;
+} 
+
+#others .right ul li{
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    border-radius: 16px;
+    padding: 16px;
+
+}
+
+#others .right ul img{
+    width: 44px;
+    height: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Others part css ends */
