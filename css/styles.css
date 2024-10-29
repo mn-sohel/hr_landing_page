@@ -1,0 +1,58 @@
+/* common css starts */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+/* common css ends */
+
+/* Navbar part css starts */
+nav{
+    background-color: #394792;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-weight: 400;
+}
+
+nav img{
+    height: 32px;
+}
+
+nav a{
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 16px 40px;
+    border-radius: 30px;
+    transition: all linear 0.3s;
+}
+
+nav a:hover{
+    border: 1px solid #fff;
+}
+
+
+/* Navbar part css ends */
